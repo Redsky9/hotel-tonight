@@ -1,9 +1,19 @@
 var User = require('../app/models/user');
+var hotels = require('../public/assets/json/hotels.json');
 
 module.exports = function(app, passport) {
   
   app.get('/', function(req, res) {
-      res.render('index.ejs'); // load the index.ejs file
+      res.render('index.ejs', {hotels: hotels}); // load the index.ejs file
+  });
+
+  app.get('/:id', async (req, res) => {
+    console.log(req.params);
+    let active =  await hotels.filter((it) => {
+      return it.id == req.params.id;
+    })
+    console.log(active[0].hotelImage);
+    res.render('hotel-item-detail.ejs', {hotel: active[0]});
   });
 
   // show the login form
@@ -22,6 +32,7 @@ module.exports = function(app, passport) {
   
   app.get('/admin', isLoggedIn, function(req, res) {
     res.render('admin.ejs', {
+      hotels: hotels,
       user : req.user // get the user out of session and pass to template
     });
   });
@@ -36,6 +47,10 @@ module.exports = function(app, passport) {
   app.get('/logout', function(req, res) {
       req.logout();
       res.redirect('/');
+  });
+
+  app.post('/post', isLoggedIn, (req, res) => {
+    console.log(req.body);
   });
 };
   

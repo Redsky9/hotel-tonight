@@ -4,6 +4,10 @@
  * Copyright 2016, Vision Design - graphic zoo
  * Free to use under the MIT license.
 */
+ul {
+  list-style: none;
+}
+
 /* Tabs */
 .tab-item {
   background: none repeat scroll 0 0 #fff;
@@ -211,7 +215,9 @@ header {
 }
 
 .margin2x {
-  margin-top: 16vh!important;
+  /* margin-top: 18vh!important; */
+  margin-top: 20vh!important;
+  min-height: 70vh;
 }
 
 .aside-nav {
@@ -301,7 +307,7 @@ img {
 }
 
 .hotel-item-content>li>img {
-  width: 100%!important;
+  width: 30vw!important;
 }
 
 .hotel-item-content>li:nth-child(2) {
@@ -312,6 +318,23 @@ img {
   margin-top: 10px;
   width: 60%;
   /* overflow: hidden; */
+}
+
+.hotel-images {
+  display: flex;
+}
+
+.left-images>img {
+  width: 50vw!important;
+  margin: 1px;
+}
+
+.right-images>img {
+  background: red;
+  height: 33%!important;
+  width: 20vw!important;
+  margin: 1px 1px 1px 3px;
+  /* float: right; */
 }
 
 /* SCROLLING TEXT */
@@ -359,5 +382,6 @@ img {
  transform: translateX(100%); 
  }
 }
+
 
 

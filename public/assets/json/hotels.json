@@ -1,7 +1,9 @@
 [
 	{
-		"hotelName": "Hotel Name 01",
+		"id": 123456,
+		"hotelName": "Continental Hotel",
 		"country": "Romania",
+		"city": "Timisoara",
 		"hotelStars": 3,
 		"hotelFloors": 2,
 		"hotelRooms": 30,
@@ -9,14 +11,18 @@
 		"hotelCoordinates": {
 			"lat": "48° 08' 49'' N",
 			"long": "08° 02' 47'' E"
-		}
-		"hotelWebsite": "www.testwebsite.com",
+		},
+		"hotelWebsite": "http://www.testwebsite.com",
 		"priceRange": {
 			"priceFrom": 200,
 			"priceTo": 400
-		}
-		"hotelDescription": "Some text goes here that describes the hotels deals and talk a bit about what the hotel is like.",
-		"hotelImage": "../images/46871800.jpg",
+		},
+		"hotelDescription": {
+			"intro": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff.",
+			"content": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff."
+		},
+		"hotelImages": ["img/41089240.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg"],
+		"hotelAddress": "Str. Continental, nr.12",
 		"hotelFacilities": {
 			"basic": ["balcony", "tv"],
 			"amenties": "accepted",
@@ -29,8 +35,10 @@
 		}
 	},
 	{
-		"hotelName": "Hotel Name 02",
+		"id": 123457,
+		"hotelName": "Hotel NortStar",
 		"country": "Romania",
+		"city": "Timisoara",
 		"hotelStars": 4,
 		"hotelFloors": 2,
 		"hotelRooms": 30,
@@ -38,14 +46,18 @@
 		"hotelCoordinates": {
 			"lat": "48° 08' 49'' N",
 			"long": "08° 02' 47'' E"
-		}
-		"hotelWebsite": "www.testwebsite.com",
+		},
+		"hotelWebsite": "http://www.testwebsite.com",
 		"priceRange": {
 			"priceFrom": 500,
 			"priceTo": 800
-		}
-		"hotelDescription": "Some text goes here that describes the hotels deals and talk a bit about what the hotel is like.",
-		"hotelImage": "../images/46871800.jpg",
+		},
+		"hotelDescription": {
+			"intro": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff.",
+			"content": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff."
+		},
+		"hotelImages": ["img/41089240.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg"],
+		"hotelAddress": "Str. Continental, nr.12",
 		"hotelFacilities": {
 			"basic": ["balcony", "tv"],
 			"amenties": "accepted",

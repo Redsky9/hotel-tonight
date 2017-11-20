@@ -1,0 +1,30 @@
+<link href="css/bootstrap-editable.css" rel="stylesheet">
+<script src="js/bootstrap-editable.js"></script>
+<script src="js/edit-hotels.js"></script>
+<form action="/" method="post">
+  <div class="s-12 m-6 l-4 hotel-item">
+    <hr>
+    <h4><a href="#" class="hotelname" data-type="text" data-pk="<%= hotel.id %>" data-url="/post" data-title="Enter hotel name"><strong><%= hotel.hotelName %></strong></a>
+      <a href="#" class="hotelstars" data-type="select" data-pk="<%= hotel.id %>" data-url="/post" data-title="Hotel Stars">
+      <% for(let i = 0; i < hotel.hotelStars; i++) { %>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      <% } %>
+      </a>
+    </h4>
+    <h6><span><a href="#" class="hotelcountry" data-type="select" data-pk="<%= hotel.id %>" data-url="/post" data-title="Enter hotel country"><%= hotel.country %></a></span> | <span><a href="#" class="hotelcity" data-type="select" data-pk="<%= hotel.id %>" data-url="/post" data-title="Enter hotel city"><%= hotel.city %></a></span></h6>
+    <ul class="hotel-item-content">
+      <li class="item-image">
+        <img src="<%= hotel.hotelImage %>">
+        <div class="hotel-item-links">
+            Visit Hotel Website: <a href="#" class="hotelwebsite" data-type="text" data-pk="<%= hotel.id %>" data-url="/post" data-title="Enter hotel website"><%= hotel.hotelWebsite %></a>  
+        </div>
+      </li>
+      <li class="item-text">
+        <p>North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 
+          3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, 
+          noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro.
+          Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff.</p>
+      </li>
+    </ul>
+  </div>
+</form>

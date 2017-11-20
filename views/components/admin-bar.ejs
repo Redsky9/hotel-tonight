@@ -1,34 +1,37 @@
-<div class="col-md-2">
-  <div class="admin-bar">
-    <h4>Tools</h2>
-    <hr>
-    <ul>
-      <li>
-        <label>Username:</label>
-        <span><strong>admin</strong></span>
-        <hr>
-      </li>
-      <li>
-          <label>Number of hotels:</label>
-          <span><strong>12</strong></span>
+<!-- ASIDE NAV -->
+<aside class="s-12 m-4 l-3">
+  <div class="aside-nav minimize-on-small">
+    <div class="admin-bar">
+      <h4>Tools</h2>
+      <hr>
+      <ul>
+        <li>
+          <label>Username:</label>
+          <span><strong>admin</strong></span>
           <hr>
         </li>
-      <li>
-        <button class="btn btn-primary" id="change-pass">Change Password</button>
-        <div id="change-password-inputs" class="hidden">
-          <p></p>
-          <form id="change-password-form" action="/admin" method="post">
-            <div class="form-group">
-              <label>New password:</label>
-              <span>
-                <input type="password" class="form-control" id="newPassword" name="newPassword">
-              </span>
-            </div>
-            <input class="btn btn-success" type="submit" value="Save" id="submit-btn">
-          </form>
-        </div>
-        <hr>
-      </li>
-    </ul>
+        <li>
+            <label>Number of hotels:</label>
+            <span><strong>12</strong></span>
+            <hr>
+          </li>
+        <li>
+          <button class="btn btn-primary" id="change-pass">Change Password</button>
+          <div id="change-password-inputs" class="hidden">
+            <p></p>
+            <form id="change-password-form" action="/admin" method="post">
+              <div class="form-group">
+                <label>New password:</label>
+                <span>
+                  <input type="password" class="form-control" id="newPassword" name="newPassword">
+                </span>
+              </div>
+              <input class="btn btn-success" type="submit" value="Save" id="submit-btn">
+            </form>
+          </div>
+          <hr>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
+</aside>

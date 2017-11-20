@@ -121,6 +121,8 @@ jQuery(document).ready(function($) {
       }, function() {
           tip.fadeOut("fast"); //Hide tooltip
     });
+
+
   });
   //Active item
   // var url = window.location.href;
