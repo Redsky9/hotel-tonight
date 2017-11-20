@@ -1,0 +1,60 @@
+[
+	{
+		"hotelName": "Hotel Name 01",
+		"country": "Romania",
+		"hotelStars": 3,
+		"hotelFloors": 2,
+		"hotelRooms": 30,
+		"hotelBeds": 80,
+		"hotelCoordinates": {
+			"lat": "48° 08' 49'' N",
+			"long": "08° 02' 47'' E"
+		}
+		"hotelWebsite": "www.testwebsite.com",
+		"priceRange": {
+			"priceFrom": 200,
+			"priceTo": 400
+		}
+		"hotelDescription": "Some text goes here that describes the hotels deals and talk a bit about what the hotel is like.",
+		"hotelImage": "../images/46871800.jpg",
+		"hotelFacilities": {
+			"basic": ["balcony", "tv"],
+			"amenties": "accepted",
+			"attractions": ["forest", "river", "mountains"],
+			"recreation": ["footbal", "tenis"],
+			"wellness": ["gym", "sauna"],
+			"available": ["parking", "reception"],
+			"entertainment": ["cafe", "internet", "pub", "restaurant"],
+			"utilities": ["airport", "bank", "atm", "pharmacy", "trainstation"]
+		}
+	},
+	{
+		"hotelName": "Hotel Name 02",
+		"country": "Romania",
+		"hotelStars": 4,
+		"hotelFloors": 2,
+		"hotelRooms": 30,
+		"hotelBeds": 80,
+		"hotelCoordinates": {
+			"lat": "48° 08' 49'' N",
+			"long": "08° 02' 47'' E"
+		}
+		"hotelWebsite": "www.testwebsite.com",
+		"priceRange": {
+			"priceFrom": 500,
+			"priceTo": 800
+		}
+		"hotelDescription": "Some text goes here that describes the hotels deals and talk a bit about what the hotel is like.",
+		"hotelImage": "../images/46871800.jpg",
+		"hotelFacilities": {
+			"basic": ["balcony", "tv"],
+			"amenties": "accepted",
+			"attractions": ["forest", "river", "mountains"],
+			"recreation": ["footbal", "tenis"],
+			"wellness": ["gym", "sauna"],
+			"available": ["parking", "reception"],
+			"entertainment": ["cafe", "internet", "pub", "restaurant"],
+			"utilities": ["airport", "bank", "atm", "pharmacy", "trainstation"]
+		}
+	}
+]
