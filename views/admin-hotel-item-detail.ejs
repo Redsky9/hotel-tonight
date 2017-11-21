@@ -1,0 +1,78 @@
+<% include components/header.ejs %>
+<script src="/js/bootstrap-editable.js"></script>
+<script src="/js/edit-hotels.js"></script>
+<!-- ASIDE NAV AND CONTENT -->
+<div class="line">
+  <div class="box">
+     <div class="margin2x">
+        <!-- CONTENT -->
+        <section class="s-12 m-8 l-9 middle">
+          <div class="margin">
+            <div class="inner-detail">
+              <section class="hotel-images">
+                <div class="left-images">
+                  <img src="<%= hotel.hotelImages[0] %>" alt="">
+                </div>
+                <div class="right-images">
+                    <img src="<%= hotel.hotelImages[1] %>" alt="">
+                    <img src="<%= hotel.hotelImages[2] %>" alt="">
+                    <img src="<%= hotel.hotelImages[3] %>" alt="">
+                </div>
+              </section>
+              <hr>
+              <section class="hotel-titles">
+                <h3><a href="#" id="hotelName" data-type="text" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Name"><%= hotel.hotelName %></a> | 
+                  <a href="#" id="hotelStars" data-type="select" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Stars"><% for(let i = 0; i < hotel.hotelStars; i++) { %>
+                  <span><i class="fa fa-star" aria-hidden="true"></i></span>
+                <% } %></a>
+              </h3>
+              <p>
+                <h6><a href="#" id="hotelWebsite" data-type="url" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Website"><%= hotel.hotelWebsite %></a></h6>
+              </p>
+              <p>
+                <h6><a href="#" id="hotelAddress" data-type="text" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Address"><%= hotel.hotelAddress %></a>
+                   | 
+                   <a href="#" id="city" data-type="select" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel City"><%= hotel.city %></a>
+                    | 
+                    <a href="#" id="country" data-type="select" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Country"><%= hotel.country %></a>
+                  </h6>
+              </p>
+              </section>
+              <hr>
+              <section class="hotel-facilities">
+                <ul>
+                  <% for(let facility in hotel.hotelFacilities) { %>
+                    <li class="facility-item">
+                      <h5><%= facility %></h5><a href="#" class="add-item" id="<%= facility %>" data-type="select" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Add Basic Facility"><i class="fa fa-plus" aria-hidden="true"></i></a>
+                      <ul>
+                        <% for(let item in hotel.hotelFacilities[facility]) { %>
+                          <li>
+                            <span class="remove-item"><a href="#"><i class="fa fa-minus" aria-hidden="true"></i></a></span><img src="/assets/images/icons/<%= facility %>/<%= hotel.hotelFacilities[facility][item] %>.gif" alt="<%= hotel.hotelFacilities[facility][item] %>"><span class="facility-img-title"><%= hotel.hotelFacilities[facility][item] %></span>
+                          </li>
+                        <% } %>
+                    </ul>
+                    </li>
+                  <% } %>
+                </ul>
+              </section>
+              <hr>
+              <section class="hotel-details">
+                <ul>
+                  <li>
+                    <h4>Introduction</h4>
+                    <p><a href="#" id="intro" data-type="textarea" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Introduction"><%= hotel.hotelDescription.intro %></a></p>
+                  </li>
+                  <li>
+                    <h4>Content</h4>
+                    <p><a href="#" id="content" data-type="textarea" data-pk="1" data-url="/admin/hotel/<%= hotel.id %>/update" data-title="Enter Hotel Content"><%= hotel.hotelDescription.content %></a></p>
+                  </li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </section>
+    </div>
+  </div>
+</div>
+
+<% include components/footer.ejs %>

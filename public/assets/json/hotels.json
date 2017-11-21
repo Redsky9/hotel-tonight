@@ -21,25 +21,25 @@
 			"intro": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff.",
 			"content": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff."
 		},
-		"hotelImages": ["img/41089240.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg"],
+		"hotelImages": ["/img/41089240.jpg", "/img/330x190_1.jpg", "/img/330x190_1.jpg", "/img/330x190_1.jpg"],
 		"hotelAddress": "Str. Continental, nr.12",
 		"hotelFacilities": {
-			"basic": ["balcony", "tv"],
-			"amenties": "accepted",
-			"attractions": ["forest", "river", "mountains"],
-			"recreation": ["footbal", "tenis"],
-			"wellness": ["gym", "sauna"],
-			"available": ["parking", "reception"],
-			"entertainment": ["cafe", "internet", "pub", "restaurant"],
-			"utilities": ["airport", "bank", "atm", "pharmacy", "trainstation"]
+			"Basic": ["Balcony", "Tv", "Sat", "Minibar"],
+			"Attractions": ["Forest", "River", "Mountains"],
+			"Recreation": ["Footbal", "Tenis"],
+			"Wellness": ["Gym", "Sauna"],
+			"Available": ["Parking", "Reception"],
+			"Entertainment": ["Cafe", "InternetCafe", "Pub", "Restaurant"],
+			"Utilities": ["Bank", "Atm", "Pharmacy", "TrainStation"],
+			"Amenties": ["Pets"]
 		}
 	},
 	{
 		"id": 123457,
-		"hotelName": "Hotel NortStar",
+		"hotelName": "NorthStar Hotel",
 		"country": "Romania",
 		"city": "Timisoara",
-		"hotelStars": 4,
+		"hotelStars": 3,
 		"hotelFloors": 2,
 		"hotelRooms": 30,
 		"hotelBeds": 80,
@@ -49,24 +49,24 @@
 		},
 		"hotelWebsite": "http://www.testwebsite.com",
 		"priceRange": {
-			"priceFrom": 500,
-			"priceTo": 800
+			"priceFrom": 200,
+			"priceTo": 400
 		},
 		"hotelDescription": {
 			"intro": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff.",
 			"content": "North Star Continental Resort pune la dispozitia dumneavoastra o gama de servicii complete: 164 de camere moderne si confortabile, 3 restaurante cu specific international si romanesc, Centrul de conferinte ultra-modern, Terasa Miami cu piscina de exterior, Lobby Bar, noul salon de infrumusetare si intretinere corporala – Continental Beauty, Night Club Galaxy, Centru de forta si fitness, Rent a Car, si Casino Valoro. Come one come all to our special hotel, where yoou will find the most awesome things to do and the most professional staff."
 		},
-		"hotelImages": ["img/41089240.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg", "img/330x190_1.jpg"],
+		"hotelImages": ["/img/41089240.jpg", "/img/330x190_1.jpg", "/img/330x190_1.jpg", "/img/330x190_1.jpg"],
 		"hotelAddress": "Str. Continental, nr.12",
 		"hotelFacilities": {
-			"basic": ["balcony", "tv"],
-			"amenties": "accepted",
-			"attractions": ["forest", "river", "mountains"],
-			"recreation": ["footbal", "tenis"],
-			"wellness": ["gym", "sauna"],
-			"available": ["parking", "reception"],
-			"entertainment": ["cafe", "internet", "pub", "restaurant"],
-			"utilities": ["airport", "bank", "atm", "pharmacy", "trainstation"]
+			"Basic": ["Balcony", "Tv", "Sat", "Minibar"],
+			"Attractions": ["Forest", "River", "Mountains"],
+			"Recreation": ["Footbal", "Tenis"],
+			"Wellness": ["Gym", "Sauna"],
+			"Available": ["Parking", "Reception"],
+			"Entertainment": ["Cafe", "InternetCafe", "Pub", "Restaurant"],
+			"Utilities": ["Bank", "Atm", "Pharmacy", "TrainStation"],
+			"Amenties": ["Pets"]
 		}
 	}
 ]

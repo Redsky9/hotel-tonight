@@ -1,5 +1,6 @@
 var express  = require('express');
 var app      = express();
+var path = require('path');
 // var port     = process.env.PORT || 8080;
 var port     = 8181;
 var mongoose = require('mongoose');
@@ -10,6 +11,8 @@ var morgan       = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
+
+let fs = require('fs');
 
 var configDB = require('./config/database.js');
 
@@ -22,7 +25,7 @@ require('./config/passport')(passport); // pass passport for configuration
 app.use(morgan('dev')); // log every request to the console
 app.use(cookieParser()); // read cookies (needed for auth)
 app.use(bodyParser()); // get information from html forms
-app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'ejs'); // set up ejs for templating
 
@@ -34,6 +37,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 
 // routes ======================================================================
 require('./app/routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
+
 
 // launch ======================================================================
 app.listen(port);

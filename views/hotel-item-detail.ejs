@@ -18,8 +18,9 @@
                     <img src="<%= hotel.hotelImages[3] %>" alt="">
                 </div>
               </section>
+              <hr>
               <section class="hotel-titles">
-                <h3><%= hotel.hotelName %>
+                <h3><%= hotel.hotelName %> | 
                 <% for(let i = 0; i < hotel.hotelStars; i++) { %>
                   <span><i class="fa fa-star" aria-hidden="true"></i></span>
                 <% } %>
@@ -28,9 +29,24 @@
                   <h6><%= hotel.hotelAddress %> | <%= hotel.city %> | <%= hotel.country %></h6>
                 </p>
               </section>
+              <hr>
               <section class="hotel-facilities">
-
+                <ul>
+                  <% for(let facility in hotel.hotelFacilities) { %>
+                    <li class="facility-item">
+                      <h5><%= facility %></h5>
+                      <ul>
+                        <% for(let item in hotel.hotelFacilities[facility]) { %>
+                          <li>
+                            <img src="/assets/images/icons/<%= facility %>/<%= hotel.hotelFacilities[facility][item] %>.gif" alt="<%= hotel.hotelFacilities[facility][item] %>"><span class="facility-img-title"><%= hotel.hotelFacilities[facility][item] %></span>
+                          </li>
+                        <% } %>
+                    </ul>
+                    </li>
+                  <% } %>
+                </ul>
               </section>
+              <hr>
               <section class="hotel-details">
                 <ul>
                   <li>

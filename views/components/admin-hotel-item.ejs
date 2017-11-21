@@ -1,23 +1,11 @@
 <div class="s-12 m-6 l-4 hotel-item">
-  <hr>
-  <h4><strong><%= hotel.hotelName %>aaa</strong> | 
-    <% for(let i = 0; i < hotel.hotelStars; i++) { %>
-      <i class="fa fa-star" aria-hidden="true"></i>
-    <% } %>
-  </h4>
-  <h6><span><%= hotel.country %></span> | <span><%= hotel.city %></span></h6>
-  <ul class="hotel-item-content">
-    <li class="item-image">
-      <img src="<%= hotel.hotelImage %>">
-      <div class="hotel-item-links">
-        <button class="button rounded-btn submit-btn submit-btn-visit"><a href="<%= hotel.hotelWebsite %>">Visit Hotel Website</a></button>
-        <button class="button rounded-btn submit-btn submit-btn-info"><a href="/hotel/<%= hotel.id %>">More Hotel info</a></button>
-      </div>
-    </li>
-    <li class="item-text">
-      <p>
-      <%= hotel.hotelDescription %>
-      </p>
-    </li>
-  </ul>
-</div>
+    <hr>
+    <h4><strong><%= hotel.hotelName %></strong> | 
+      <% for(let i = 0; i < hotel.hotelStars; i++) { %>
+        <i class="fa fa-star" aria-hidden="true"></i>
+      <% } %>
+      <button class="button rounded-btn edit-btn"><a href="/admin/hotel/<%= hotel.id %>">Edit Hotel</a></button>
+    </h4>
+    <h6><span><%= hotel.country %></span> | <span><%= hotel.city %></span></h6>
+          
+  </div>

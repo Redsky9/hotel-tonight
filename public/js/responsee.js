@@ -6,6 +6,8 @@
 */
 jQuery(document).ready(function($) {
 
+    
+
     // Slider
     $( "#slider-range" ).slider({
       range: true,

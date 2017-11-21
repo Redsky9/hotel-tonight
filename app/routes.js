@@ -7,13 +7,20 @@ module.exports = function(app, passport) {
       res.render('index.ejs', {hotels: hotels}); // load the index.ejs file
   });
 
-  app.get('/:id', async (req, res) => {
-    console.log(req.params);
+  app.get('/hotel/:id', async (req, res) => {
     let active =  await hotels.filter((it) => {
       return it.id == req.params.id;
     })
-    console.log(active[0].hotelImage);
+
     res.render('hotel-item-detail.ejs', {hotel: active[0]});
+  });
+
+  app.get('/admin/hotel/:id', isLoggedIn, async (req, res) => {
+    let active =  await hotels.filter((it) => {
+      return it.id == req.params.id;
+    })
+
+    res.render('admin-hotel-item-detail.ejs', {hotel: active[0]});
   });
 
   // show the login form
@@ -42,7 +49,11 @@ module.exports = function(app, passport) {
       req.logout();
       res.redirect('/login');
     }
-  })
+  });
+
+  app.post('/admin/hotel/:id/update', isLoggedIn, (req, res) => {
+    console.log(req.body);
+  });
 
   app.get('/logout', function(req, res) {
       req.logout();

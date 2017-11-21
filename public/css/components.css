@@ -337,6 +337,64 @@ img {
   /* float: right; */
 }
 
+.hotel-facilities>ul {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.hotel-facilities>ul>li>ul {
+  padding: 0;
+}
+
+.hotel-facilities>ul>li>ul>li {
+  display: flex;
+}
+
+.hotel-facilities>ul>li>ul>li>img {
+  width: auto!important;  
+}
+
+.facility-item {
+  width: 33%;
+  margin: 1px;
+}
+
+.facility-img-title {
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.edit-btn {
+  width: 20%;
+  background: red;
+  margin-right: 30%;
+  float: right;
+}
+
+.edit-btn>a {
+  color: white!important;
+}
+
+textarea {
+  resize: both;
+  width: 40vw!important;
+}
+
+.add-item {
+  margin-left: 28px;
+}
+
+.remove-item {
+  margin-right: 5px;
+}
+
+
+
+
+
 /* SCROLLING TEXT */
 .scroll-right {
  margin-top: 7px;
